@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Halloween</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"
+      integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script defer src="./script/script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <input type="checkbox" id="rope" />
+        <label for="rope">
+          <img src="./images/rope.png" alt="rope" />
+        </label>
+        <div class="curtain">
+          <img src="./images/curtain.png" alt="curtain" />
+        </div>
+        <div class="curtain-both">
+          <img src="./images/cur-left.png" alt="cur-left" />
+          <img src="./images/cur-right.png" alt="cur-right" />
+        </div>
+      </header>
+
+      <section id="content" class="first-section">
+        <h1 class="fade-in">HAPPY HALLOWEEN!</h1>
+
+        <div class="char">
+          <div class="pry fade-in">
+            <div class="circle">
+              <img src="./images/pry.png" alt="pry" />
+            </div>
+            <div class="pry-des">
+              <h3>프라이</h3>
+              <p>
+                다섯 명의 친구들 중 리더 격인 유령<br />
+                말수가 적으며 절대 천을 벗지 않는다
+              </p>
+            </div>
+            <hr />
+          </div>
+
+          <div class="joke fade-in">
+            <div class="circle">
+              <img src="./images/joke.png" alt="pry" />
+            </div>
+            <div class="joke-des">
+              <h3>조크</h3>
+              <p>
+                천방지축, 분위기 메이커 미라<br />
+                사고를 쳐도 언제나 즐겁다!
+              </p>
+            </div>
+            <hr />
+          </div>
+
+          <div class="evel fade-in">
+            <div class="circle">
+              <img src="./images/evel.png" alt="pry" />
+            </div>
+            <div class="evel-des">
+              <h3>이벨</h3>
+              <p>
+                마녀지만 덤벙거리는 성격 탓에<br />
+                쓸 줄 아는 마법은 별로 없다
+              </p>
+            </div>
+            <hr />
+          </div>
+
+          <div class="peper fade-in">
+            <div class="circle-small">
+              <img src="./images/peper.png" alt="pry" />
+            </div>
+            <div class="peper-des">
+              <h3>페퍼</h3>
+              <p>
+                이벨의 파트너<br />
+                주인보다 더 믿음직하다
+              </p>
+            </div>
+            <hr />
+          </div>
+
+          <div class="dum fade-in">
+            <div class="circle">
+              <img src="./images/dum.png" alt="pry" />
+            </div>
+            <div class="dum-des">
+              <h3>덤</h3>
+              <p>
+                어딘가 한 박자 느린 프랑켄슈타인<br />
+                행동도 굼뜨고 항상 멍하다
+              </p>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </section>
+
+      <section id="content" class="second-section scroll-spy">
+        <div class="flex">
+          <img
+            src="./images/f-1.png"
+            alt="first"
+            class="back-to-position to-top delay-0"
+          />
+          <img
+            src="./images/f-2.png"
+            alt="first"
+            class="back-to-position to-top delay-1"
+          />
+          <img
+            src="./images/f-3.png"
+            alt="first"
+            class="back-to-position to-top delay-2"
+          />
+        </div>
+      </section>
+
+      <section id="content" class="third-section scroll-spy">
+        <div class="t-img">
+          <img
+            src="./images/s-1.png"
+            alt="second"
+            class="back-to-position to-bottom delay-0"
+          />
+          <img
+            src="./images/s-2.png"
+            alt="second"
+            class="back-to-position to-right delay-1"
+          />
+          <img
+            src="./images/s-3.png"
+            alt="second"
+            class="back-to-position to-bottom delay-2"
+          />
+          <img
+            src="./images/s-4.png"
+            alt="second"
+            class="back-to-position to-right delay-3"
+          />
+          <img
+            src="./images/s-5.png"
+            alt="second"
+            class="back-to-position to-top delay-4"
+          />
+        </div>
+      </section>
+
+      <section id="content" class="movie-section scroll-spy">
+        <div class="film top"></div>
+        <div class="film bottom"></div>
+        <div class="movie"></div>
+        <div class="m-img">
+          <img
+            src="./images/movie-2.png"
+            alt="movie"
+            class="back-to-position to-top delay-3"
+          />
+        </div>
+      </section>
+
+      <section id="content" class="five-section scroll-spy">
+        <img
+          src="./images/l-1.png"
+          alt="last"
+          class="back-to-position delay-0"
+        />
+        <img
+          src="./images/l-2.png"
+          alt="last"
+          class="back-to-position to-bottom delay-3"
+        />
+        <img
+          src="./images/l-3.png"
+          alt="last"
+          class="back-to-position to-bottom delay-4"
+        />
+      </section>
+
+      <section id="content" class="last-section">
+        <img src="./images/pumpkin-white.png" alt="pumpkin-white" />
+      </section>
+    </div>
+  </body>
+</html>
